@@ -14,14 +14,14 @@ const Toolbar = observer(() => {
   return (
     <div>
       <div style={{width: '500px',height: '40px',fontSize: '32px',}} 
-        onClick={() => {test.setIsTest(); context.toggle();}}
+        onClick={() => {test.setIsTest();}}
       >更改theme</div>
       <div>isTest: {test.isTest ? 'true' : 'false'}</div>
     </div>
   )
 })
 
-const TestComp = (props: Geeting) => {
+const TestComp = (props) => {
   let [count, setCount] = useState(0)
   useEffect(() => { 
     let I = setInterval(() => {
